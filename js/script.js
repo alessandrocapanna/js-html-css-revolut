@@ -1,14 +1,17 @@
+// NOTE: per il dropdown
 $('.with-drop').mouseenter(
   function(){
-    $('.drop').addClass('active');
+    $('.drop').removeClass('active');
+    $(this).children('.drop').addClass('active');
   }
 );
 $('.with-drop').click(
   function(){
-    $('.drop').removeClass('active');
+    $(this).children('.drop').removeClass('active');
   }
 );
 
+// NOTE: per il cambio icona
 $('.it').mouseenter(
   function(){
     $('.it i').removeClass('fa-sort-down');
