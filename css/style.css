@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
+li {
+  position: relative;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-sx img {
+  height: 30px;
+  vertical-align: middle;
+}
+.nav-sx li:last-child {
+  color: grey;
+}
+.nav-dx {
+  color: grey;
+}
+
+.drop {
+  width: 130px;
+  display: none;
+  position: absolute;
+  left: 0;
+}
+.drop li span {
+  color: #eb018d;
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  top: -12px;
+  right: 5px;
+}
+.drop.active {
+  display: block;
+}
+.it i {
+  position: relative;
+  bottom: -5px;
+}
+button {
+  background-color: #eb018d;
+  padding: 8px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+}
