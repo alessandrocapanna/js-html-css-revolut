@@ -15,7 +15,7 @@ li {
 }
 
 .wrapper {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   padding-top: 20px;
 }
@@ -63,4 +63,41 @@ button {
   color: white;
   border: none;
   border-radius: 15px;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .nav-dx {
+    display: none;
+  }
+  .burger{
+    display: block;
+    padding-left: 10px;
+  }
+  .burger i {
+    padding: 10px;
+    color: grey;
+    font-size: 19px;
+  }
+  .burger > i:nth-child(2) {
+    position: relative;
+    right: -60px;
+    font-size: 24px;
+  }
+  .burger ul{
+    display: none;
+
+  }
+  .burger ul li{
+    display: block;
+  }
+}
+
+
+.active {
+  display: block;
+}
+.hidden {
+  display: none;
 }
