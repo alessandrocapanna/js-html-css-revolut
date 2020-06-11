@@ -35,10 +35,11 @@ li {
 }
 
 .drop {
-  width: 130px;
+  white-space: nowrap;
   display: none;
   position: absolute;
   left: 0;
+  top: 100%;
 }
 .drop li span {
   color: #eb018d;
@@ -49,7 +50,8 @@ li {
   right: 5px;
 }
 .drop.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 .it i {
   position: relative;
@@ -61,5 +63,4 @@ button {
   color: white;
   border: none;
   border-radius: 15px;
-}
 }
